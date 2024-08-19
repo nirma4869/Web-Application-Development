@@ -1,0 +1,41 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  text: Deploy Assets to servers
+  position: 1
+  list: one
+
+two:
+  text: Send mail to beta users
+  position: 2
+  list: one
+
+three:
+  text: Implement and test logic
+  position: 1
+  list: two
+
+four:
+  text: Design assets and implement styles
+  position: 2
+  list: two
+
+five:
+  text: Deploy Assets to servers
+  position: 1
+  list: three
+
+six:
+  text: Send mail to beta users
+  position: 2
+  list: three
+
+seven:
+  text: Implement and test logic
+  position: 1
+  list: four
+
+eight:
+  text: Design assets and implement styles
+  position: 2
+  list: four
