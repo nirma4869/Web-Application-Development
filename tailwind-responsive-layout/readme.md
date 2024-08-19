@@ -1,8 +1,8 @@
-![task](screenshots/tw-e.png)
+![task](screensots/tw-e.png)
 
-![sol](screenshots/tw-big.png)
+![sol](screensots/tw-big.png)
 
-![sol](screenshots/tw-s.png)
-![sol](screenshots/tw-s2.png)
+![sol](screensots/tw-s.png)
+![sol](screensots/tw-s2.png)
 
 Use the index.html page to view the result.
