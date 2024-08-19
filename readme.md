@@ -31,4 +31,4 @@ To enhance application performance, a client-side framework (React) was used to 
 
 ### General Technologies
 
-Throughout the project, Docker was used to run applications in isolated containers, and Git was employed for version control.
+Throughout the project Node.js was used, Docker was used to run applications in isolated containers, and Git was used for version control.
