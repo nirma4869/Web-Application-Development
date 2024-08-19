@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./output.css" rel="stylesheet">
+    <title>Tailwind Responsive Website</title>
+</head>
+<body>
+    <div class="flex flex-col xl:flex-row ">
+        <div class="flex flex-col flex-grow-2 border-2 border-black h-screen">
+            <header class="flex border-b-2 p-4 justify-center items-center border-black  xl:w-96">Logo</header>
+            <div class="flex flex-col justify-center items-center p-2.5">
+                <a href="https://github.com/nirma4869" class="flex py-4 px-16 my-1 border-2 justify-center items-center w-9/12 border-black">Link 1</a>
+                <a href="https://github.com/nirma4869" class="flex py-4 px-16 my-1 border-2 justify-center items-center w-9/12 border-black">Link 2</a>
+                <a href="https://github.com/nirma4869" class="flex py-4 px-16 my-1 border-2 justify-center items-center w-9/12 border-black">Link 3</a>
+            </div>
+        </div>
+        <div class="flex flex-col flex-grow-3 border-black border-2 w-screen  xl:border-t-2 xl:border-r-2 xl:border-b-2 xl:border-0 ">
+            <header class ="flex border-b-2 p-4 justify-center items-center border-black"> Header</header>
+            <div class="flex flex-col flex-wrap flex-shrink-0 xl:flex-row xl:w-9/12">
+                <p class="flex p-12 m-4 border-2 justify-center items-center border-black">Card 1</p>
+                <p class="flex p-12 m-4 border-2 justify-center items-center border-black">Card 2</p>
+                <p class="flex p-12 m-4 border-2 justify-center items-center border-black">Card 3</p>
+                <p class="flex p-12 m-4 border-2 justify-center items-center border-black">Card 4</p>
+                <p class="flex p-12 m-4 border-2 justify-center items-center border-black">Card 1</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

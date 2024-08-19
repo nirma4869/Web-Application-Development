@@ -1,0 +1,134 @@
+a{
+    display: flex;
+    flex-direction: column;
+}
+
+.page{
+    display: flex;
+
+    
+}
+.left{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 2;
+    border-left: 2px solid black;  
+    border-top: 2px solid black;   
+    border-bottom: 2px solid black; 
+    height: 100vh;
+}
+.right{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 3;
+    border: 2px solid black;
+
+}
+.leftMain{
+    display: flex;
+
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    
+}
+.rightMain{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-shrink: 0;
+}
+.leftLogo{
+    display: flex;
+    border-bottom: 2px solid black; 
+    padding: 1em;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+
+}
+.rightLogo{
+    display: flex;
+    border-bottom: 2px solid black; 
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+}
+a{
+    display: flex;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    padding-left: 1em;
+    padding-right: 1em;
+    margin-top: 1em;
+    border-left: 2px solid black;  
+    border-top: 2px solid black;   
+    border-bottom: 2px solid black; 
+    border-right: 2px solid black; 
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 75%;
+
+}
+p{
+    display: flex;
+    padding: 3em;
+    margin: 1rem;
+    border-left: 2px solid black;  
+    border-top: 2px solid black;   
+    border-bottom: 2px solid black; 
+    border-right: 2px solid black; 
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+
+}
+@media (width <= 1280px) {
+    .page{
+        display: flex;
+        flex-direction: column;
+    }
+    .left{
+        display: flex;
+        flex-direction: column;
+        flex-grow: 2;
+        flex: 3 400px;
+        border-left: 2px solid black;  
+        border-top: 2px solid black;   
+        border-right: 2px solid black; 
+        border-bottom: 0px solid black; 
+
+    }
+    .right{
+        display: flex;
+        flex-direction: column;
+        flex-grow: 3;
+ 
+
+    }
+    .rightMain{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        flex-shrink: 0;
+    }
+    a{
+        display: flex;
+        padding-top: 0.5em;
+        padding-bottom: 0.5em;
+        padding-left: 1em;
+        padding-right: 1em;
+        margin-top: 1em;
+        border-left: 2px solid black;  
+        border-top: 2px solid black;   
+        border-bottom: 2px solid black; 
+        border-right: 2px solid black; 
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        width: 75%;
+    
+    }
+}
