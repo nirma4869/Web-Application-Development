@@ -1,0 +1,13 @@
+<div class="mx-auto md:w-2/3 w-full">
+  <h1 class="font-bold text-4xl">Editing card</h1>
+
+  <%= render "form", card: @card %>
+
+  <%= link_to 'Delete', workspace_list_card_path(@workspace, @list, @card),
+                  method: :delete,
+                  data: { turbo_confirm: 'Are you sure you want to delete this?', turbo_method: :delete },
+                  class: "ml-2 rounded-lg py-3 px-5 bg-red-600 text-white font-medium inline-block" 
+                  %> 
+  <%= link_to "Back", workspace_path(@workspace), class: "ml-2 rounded-lg py-3 px-5 bg-gray-100 inline-block font-medium" %>
+</div>
+   

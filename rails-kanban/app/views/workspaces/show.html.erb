@@ -1,0 +1,35 @@
+<div class="container mx-auto p-6">
+  <h1 class="text-3xl font-bold mb-4"><%= @workspace.name %></h1>
+
+  <div class="flex mb-6">
+    <%= link_to 'Edit Workspace', edit_workspace_path(@workspace), class: "bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" %>
+    <%= link_to 'Back to Workspaces', workspaces_path, class: "ml-4 bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded" %>
+  </div>
+
+<div class="flex flex-row mb-3">
+  <h2 class="text-2xl font-semibold">Lists</h2> 
+  <%= link_to 'Add List', new_workspace_list_path(@workspace), class: "ml-4 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" %>
+</div>
+  <div class="flex flex-row gap-10 overflow-x-auto">
+  <% @workspace.lists.order(:position).each do |list| %>
+    <div class="bg-white border-2 shadow-xl rounded-lg p-4 mb-4 w-[360px] flex flex-col justify-between flex-none">
+      <div class="">
+        <div class="flex justify-between mb-4">
+          <h3 class="text-xl font-medium"><%= list.name %></h3>
+          <%= link_to "Edit", edit_workspace_list_path(@workspace, list), class: "rounded-lg py-2 px-5 bg-gray-100 inline-block font-medium" %>
+        </div>
+
+          <% list.cards.order(:position).each do |card| %>
+            <p class="bg-gray-100 p-4 rounded mb-2 relative">
+              <span class="font-semibold"><%= card.text %></span>
+              <span class="text-gray-600 absolute bottom-2 right-4">
+                <%= link_to "Edit", edit_workspace_list_card_path(@workspace, list, card), class: "h-full w-full font-medium" %>
+              </span>
+            </p>
+            <% end %>
+      </div>     
+      <%= link_to 'Add Card', new_workspace_list_card_path(@workspace, list), class: "mt-4 text-center bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-3 rounded" %>
+    </div>
+  <% end %>
+  </div>
+</div>

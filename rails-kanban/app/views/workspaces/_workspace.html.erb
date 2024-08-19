@@ -1,0 +1,11 @@
+<div class="rounded-lg shadow-xl p-4 border-2" id="<%= dom_id workspace %>">
+  <p class="text-xl my-4">
+    <%= workspace.name %>
+  </p> 
+    
+
+  <% if action_name != "show" %>
+    <%= link_to "Show this workspace", workspace, class: "rounded-lg py-3 px-5 bg-gray-100 inline-block font-medium" %>
+    <%= link_to "Edit this workspace", edit_workspace_path(workspace), class: "rounded-lg py-3 ml-2 px-5 bg-gray-100 inline-block font-medium" %>
+  <% end %>
+</div>
