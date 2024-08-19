@@ -9,7 +9,7 @@ Responsive web layouts were created using HTML, CSS, and Tailwind CSS. For more 
 
 ### Server-Side Rendering
 
-A Kanban board was developed using Ruby on Rails, employing a test-driven development process and exploring the application of the Model-View-Controller (MVC) pattern. More information can be found in the `rails-kanban` folder's `readme.md`.
+A Kanban board was developed using Ruby on Rails, employing a test-driven development process and exploring the application of the Model-View-Controller (MVC) pattern.
 
 ### Client-Side Rendering
 
